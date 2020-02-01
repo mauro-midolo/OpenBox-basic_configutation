@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #install basic application
-sudo apt-get install openbox obmenu obconf xinit terminator conky unzip
+sudo apt-get install openbox obmenu obconf xinit terminator conky unzip nautilus
 
 #Install Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
