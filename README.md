@@ -1,0 +1,1 @@
+# OpenBox-basic_configutation
