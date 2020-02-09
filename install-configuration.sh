@@ -3,7 +3,7 @@
 #install basic application
 sudo apt-get install -y openbox obmenu obconf xinit \
 	terminator conky unzip nautilus gcc make tint2 \
-	wicd
+	network-manager-gnome
 
 #Install Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -19,3 +19,7 @@ rm NVIDIA-Linux-x86_64-340.108.run
 #Configure tint2
 cp ./tint2rc ~/.config/tint2/tint2rc
 echo "tint2 &" >> ~/.config/openbox/autostart
+
+#Configure asus function key
+sudo sed -i "s/GRUB_CMDLINE_LINUX_DEFAULT=\"splash quiet\"/GRUB_CMDLINE_LINUX_DEFAULT\=\"splash quiet acpi_osi\=\"/g" /etc/default/grub
+sudo update-grub
