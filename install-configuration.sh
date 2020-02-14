@@ -12,6 +12,7 @@ sudo nano ./NVIDIA-Linux-x86_64-340.108.run
 rm NVIDIA-Linux-x86_64-340.108.run
 
 #Configure tint2
+mkdir -p ~/.config/openbox/
 cp ./tint2rc ~/.config/tint2/tint2rc
 echo "tint2 &" >> ~/.config/openbox/autostart
 
