@@ -8,7 +8,7 @@ sudo apt-get install -y openbox obmenu obconf xinit \
 #install Nvidia Driver
 wget http://it.download.nvidia.com/XFree86/Linux-x86_64/340.108/NVIDIA-Linux-x86_64-340.108.run
 chmod +x NVIDIA-Linux-x86_64-340.108.run
-sudo nano ./NVIDIA-Linux-x86_64-340.108.run
+sudo ./NVIDIA-Linux-x86_64-340.108.run
 rm NVIDIA-Linux-x86_64-340.108.run
 
 #Configure tint2
